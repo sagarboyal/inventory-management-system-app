@@ -1,3 +1,5 @@
+import { colors } from "@/src/shared/constants/colors";
+import { fonts } from "@/src/shared/constants/fonts";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
@@ -20,8 +22,8 @@ export const styles = StyleSheet.create({
     marginTop: 20,
   },
   sectionTitle: {
+    fontFamily: fonts.medium_500,
     fontSize: 12,
-    fontWeight: "600",
     color: "#1a1a1a",
     paddingHorizontal: 20,
     paddingVertical: 8,
@@ -36,19 +38,17 @@ export const styles = StyleSheet.create({
     marginHorizontal: 10,
     borderRadius: 8,
   },
-  menuItemActive: {
-    backgroundColor: "#FFF5F2",
-  },
   icon: {
     marginRight: 12,
   },
   menuText: {
     flex: 1,
+    fontFamily: fonts.regular_400,
     fontSize: 14,
-    color: "#666",
+    color: colors.grey[900],
   },
   menuTextActive: {
-    color: "#FF6B35",
+    color: colors.primary[900],
     fontWeight: "500",
   },
   chevron: {
