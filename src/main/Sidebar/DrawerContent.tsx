@@ -1,4 +1,5 @@
 import { colors } from "@/src/shared/constants/colors";
+import { images } from "@/src/shared/constants/images";
 import { Ionicons } from "@expo/vector-icons";
 import { DrawerContentComponentProps } from "@react-navigation/drawer";
 import { usePathname, useRouter } from "expo-router";
@@ -22,7 +23,7 @@ const DrawerContent = (props: DrawerContentComponentProps) => {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Image
-          source={require("../../../assets/logo.png")}
+          source={images.brand_logo}
           style={styles.logo}
           resizeMode="contain"
         />
