@@ -4,9 +4,11 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   header: {
-    height: 70,
+    height: 65,
     flexDirection: "row",
     alignItems: "center",
+    borderBottomColor: colors.grey[100],
+    borderBottomWidth: 1,
   },
 
   leftSection: {
@@ -15,29 +17,24 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     gap: 12,
   },
-  leftSectionIconWrapper:{
-    marginHorizontal: 12
+  leftSectionIconWrapper: {
+    marginHorizontal: 12,
   },
-  leftSectionIcon:{
-    color: colors.primary[900]
+  leftSectionIcon: {
+    color: colors.primary[900],
   },
-  leftSectionInputWrapper:{
-    flex: 1,
+  leftSectionTime: {
     flexDirection: "row",
     alignItems: "center",
-    height: 46,
-    borderColor: colors.grey[300],
-    borderWidth: 1,
-    borderRadius: 16
+    gap: 4,
   },
-  leftSectionInputIcon:{
-    marginHorizontal: 8,
-    color: colors.grey[300],
+  leftSectionTimeText: {
+    fontFamily: fonts.medium_500,
+    fontSize: 24,
+    textAlignVertical: "center",
   },
-  leftSectionInput:{
-    fontFamily: fonts.regular_400,
-    color: colors.grey[300],
-    fontSize: 16
+  leftSectionAmPm: {
+    fontFamily: fonts.medium_500,
   },
 
   rightSection: {
@@ -54,10 +51,17 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginRight: 20,
+    width: 140,
+    height: 40,
+    paddingHorizontal: 12,
+    borderColor: colors.grey[100],
+    borderWidth: 1,
+    borderRadius: 5,
   },
+
   rightTitleText: {
     fontFamily: fonts.regular_400,
-    fontSize: 17,
+    fontSize: 15,
     color: colors.grey[900],
   },
   rightActionButtons: {
@@ -70,12 +74,17 @@ export const styles = StyleSheet.create({
   rightActionIcon: {
     color: colors.grey[600],
   },
+
   rightIconWrapper: {},
+  rightFlagIcon: {
+    width: 24,
+    height: 24,
+  },
   rightIcon: {
     width: 40,
     height: 40,
   },
   pressed: {
-    opacity: 0.7
-  }
+    opacity: 0.7,
+  },
 });
