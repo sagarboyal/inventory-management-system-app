@@ -1,12 +1,8 @@
-import React from 'react'
-import { Text, View } from 'react-native'
+import ProductScreen from "@/src/products/screens/ProductScreen/ProductScreen";
+import React from "react";
 
 const products = () => {
-  return (
-    <View>
-      <Text>products</Text>
-    </View>
-  )
-}
+  return <ProductScreen />;
+};
 
-export default products
+export default products;
